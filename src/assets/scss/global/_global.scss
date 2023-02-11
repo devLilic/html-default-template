@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: $color-background;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: $container-padding;
+}
+
+
+
+
+
+.hidden{
+  display: none !important;
+}
+
+.title{
+  font-size: 4rem;
+  font-weight: normal;
+  margin-left: 4.5rem;
+  margin-bottom: 1.8rem;
+  color: #333;
+}

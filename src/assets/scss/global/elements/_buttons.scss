@@ -1,0 +1,30 @@
+.btn {
+  border: 0;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  padding: 1.3rem 2rem;
+  font: {
+    size: $default-font-size;
+    weight: bold;
+  }
+}
+
+.btn-primary {
+  background-color: $color-main;
+  line-height: 2.4rem;
+
+  &:hover {
+    background-color: lighten($color-main, 5%);
+  }
+}
+
+.btn-default {
+  background-color: #fff;
+  color: $color-main;
+
+  &:hover {
+    background-color: lighten(#fff, 5%);
+  }
+}

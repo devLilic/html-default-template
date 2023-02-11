@@ -1,0 +1,46 @@
+// mixin font-face requires woff and woff2 format.
+// convert font files on fontsquirrel.com/tools/webfont-generator
+
+//@font-face {
+//  @include fontFace('Muller', "MullerRegular", normal, normal)
+//}
+
+
+body {
+  font: #{$default-font-size} / #{$default-line-height} "#{$default-font-family}", sans-serif, normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: $default-line-height;
+}
+
+h1 {
+  font-size: $h1-font-size;
+
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
