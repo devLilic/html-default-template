@@ -1,31 +1,27 @@
-@mixin background-image($url, $position: 'center', $size: 'cover') {
+@mixin bgi($img-name, $position: 0 0, $size: auto auto, $repeat: no-repeat){
   background: {
-    image: url($url);
-    repeat: no-repeat;
+    image: url("#{$media-folder}#{$img-name}");
+    repeat: $repeat;
     position: $position;
     size: $size;
   };
 }
 
-@mixin positioned-element($width: 1rem, $height: 1rem ) {
+@mixin pseudo-element($width: 1rem, $height: 1rem ) {
   content: "";
   position: absolute;
   width: $width;
   height: $height;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 
 @mixin fontFace($fontName, $fileName, $fontWeight: normal, $fontStyle: normal) {
-
   font: {
     family: $fontName, sans-serif;
     display: swap;
     weight: $fontWeight;
     style: $fontStyle;
   }
-  src: url("/assets/fonts/#{$fileName}.woff") format("woff"),
-  url("/assets/fonts/#{$fileName}.woff2") format("woff2");
+  src: url("#{$local-fonts-folder}#{$fileName}.woff") format("woff"),
+  url("#{$local-fonts-folder}#{$fileName}.woff2") format("woff2");
 }
-
