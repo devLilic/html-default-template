@@ -1,13 +1,13 @@
 @import "node_modules/normalize-scss/sass/normalize";
-@import "global/reset";
+"global/reset",
 
 // global
-@import "global/vars";
-@import "global/mixins";
-@import "global/fonts";
-@import "global/global";
-@import "global/elements/buttons";
-@import "global/elements/checkbox";
+"global/vars",
+"global/mixins",
+"global/fonts",
+"global/global",
+"global/elements/buttons",
+"global/elements/checkbox"
 
 
 // Partials
